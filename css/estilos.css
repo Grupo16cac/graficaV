@@ -1,0 +1,303 @@
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: lato;
+	background:#FEFEFE;
+}
+
+#cabecera{ 
+    background-color: #ffee07; 
+    margin: 0 auto;
+    font-family: Lato;     
+    font-size: 1.1em; 
+    text-align: right;
+    padding: 25px;
+} 
+
+.foto1 {  
+  padding: 20px 50px;
+  height: 90px;
+  float: left;
+  margin:0 auto;
+}
+
+.left {
+  background-color:#484E54;
+  color: #fff;
+  padding: 20px 50px;
+  height: 185px;
+  float:left;
+  width:33.3%; 
+}
+
+.main {
+  background-color:#484E54;
+  color: #fff;
+  padding:20px;
+  height: 185px;
+  float:left;
+  width:33.3%; 
+}
+
+.right {
+  background-color:#484E54;
+  color: #fff;
+  padding:20px;
+  height: 185px;
+  float:left;
+  width:33.3%; 
+}
+
+
+
+.footer {
+	display: block;
+    background-color:#2D3135;
+    color: #fff;
+    text-align:center;
+    font-weight: 300;
+    padding: 15px;
+}
+
+.footer p {
+    text-align:center;
+
+}
+
+article {
+	padding: 20px 50px;
+}
+
+h2 {
+	text-align: center;
+	font-weight: 400;
+}
+
+p {
+	text-align: left;
+	font-weight: 300;
+	padding left: 20%;
+	padding-right: 40px;
+}
+
+
+
+.menu_bar {
+	display:none;
+}
+
+header {
+	width: 100%;
+	display: inline-block;
+}
+
+header nav {
+	background:#fff;
+	z-index:1000;
+	display: inline-block;
+	float: right;
+	padding-right: 20px;
+	margin:20px auto;
+	-webkit-box-shadow: 3px 3px 5px 0px rgba(168,168,168,0.53);
+	-moz-box-shadow: 3px 3px 5px 0px rgba(168,168,168,0.53);
+	box-shadow: 3px 3px 5px 0px rgba(168,168,168,0.53);
+}
+
+
+header nav ul {
+	list-style:none;
+}
+
+header nav ul li {
+	display:inline-block;
+	position: relative;
+}
+
+
+header nav ul {
+	list-style:none;
+}
+
+header nav ul li {
+	display:inline-block;
+	position: relative;
+}
+
+header nav ul li:hover {
+	background:#B8B37E;
+}
+
+header nav ul li a {
+	color:#000000;
+	display:block;
+	text-decoration:none;
+	padding: 20px;
+}
+
+
+header nav ul li a span {
+	margin-right:10px;
+}
+
+header nav ul li:hover .children {
+	display:block;
+}
+
+header nav ul li .children {
+	display: none;
+	background:#ffee07;
+	position: absolute;
+	width: 120%;
+	z-index:1000;
+	-webkit-box-shadow: 3px 3px 5px 0px rgba(168,168,168,0.5);
+-moz-box-shadow: 3px 3px 5px 0px rgba(168,168,168,0.5);
+box-shadow: 3px 3px 5px 0px rgba(168,168,168,0.5);
+
+}
+
+header nav ul li .children li {
+	display:block;
+	overflow: hidden;
+	border-bottom: 1px solid rgba(255,255,255,.5);
+
+}
+
+header nav ul li .children li a {
+	display: block;
+}
+
+header nav ul li .children li a span {
+	float: right;
+	position: relative;
+	top:3px;
+	margin-right:0;
+	margin-left:10px;
+}
+
+header nav ul li .caret icon-arrow-down6 {
+	color: #000000;
+	position: relative;
+	top:3px;
+	margin-left:10px;
+	margin-right:0px;
+}
+
+
+main {
+	background: #79848c;
+	width: 100%;
+	height: 50vh;
+
+}
+
+@media screen and (max-width: 950px) {
+
+	.foto1 {  
+	padding-left: 35%;
+	margin: auto;
+	text-align:center;
+}
+
+
+
+
+@media screen and (max-width: 850px) {
+	body {
+		padding-top:80px;
+	}
+
+	.menu_bar {
+		display:block;
+		width:100%;
+		position: fixed;
+		top:0;
+		background:#ffee07;
+	}
+
+	.menu_bar .bt-menu {
+
+		display: block;
+		padding: 20px;
+		overflow: hidden;
+		color: #000;
+		font-size: 25px;
+		font-weight: bold;
+		text-decoration: none;
+		-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	}
+
+	.menu_bar span {
+		float: right;
+		font-size: 35px;
+	}
+
+	header nav {
+		width: 60%;
+		height: 433px;
+		position: fixed;
+		right:100%;
+		margin: 0;
+		overflow: scroll;
+	}
+
+	header nav ul li {
+		display: block;
+		border-bottom:1px solid rgba(255,255,255,.5);
+
+	}
+
+	header nav ul li a {
+		display: block;
+	}
+
+	header nav ul li:hover .children {
+		display: none;
+	}
+
+	header nav ul li .children {
+		width: 100%;
+		position: relative;
+	}
+
+	header nav ul li .children li a {
+		margin-left:20px;
+	}
+
+	header nav ul li .caret {
+		float: right;
+	}
+
+	
+
+	section {
+	padding: 30px
+	}
+
+	#cabecera {
+		display: none;
+	}
+	
+	.foto1 {
+		padding-left: 32%;
+	}
+
+	.left, .main, .right {
+    width:100%;
+    border-bottom:1px solid rgba(255,255,255,.2);
+    padding-left: 30px;
+	}
+
+
+}
+
+
+
+
